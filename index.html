@@ -28,7 +28,30 @@ a{text-decoration:none;color:white;font-weight:600}
 .logo{width:30px;height:30px;object-fit:contain;flex-shrink:0}
 .discord-logo{border-radius:50%;object-fit:cover;box-shadow:0 0 10px rgba(88,101,242,.8),0 0 20px rgba(88,101,242,.4)}
 .footer{text-align:center;margin-top:30px;font-size:12px;color:#d9c98f}
-#betclicQR{
+.winamax-btn{
+justify-content:space-between;
+gap:10px;
+}
+
+.winamax-text{
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+line-height:1.2;
+flex:1;
+}
+
+.winamax-text span{
+font-size:11px;
+color:#d9c98f;
+}
+
+.winamax-btn small{
+font-size:10px;
+color:#d9c98f;
+white-space:nowrap;
+}#betclicQR{
 display:none;
 margin-top:15px;
 text-align:center;
@@ -64,26 +87,15 @@ box-shadow:0 0 20px rgba(215,180,90,.5);
       <span>Rejoindre le Discord</span>
     </a>
 
-  <a class="btn" href="https://www.winamax.fr/parrain?code=PRL26Y" target="_blank">
+ <a class="btn winamax-btn" href="https://www.winamax.fr/parrain?code=PRL26Y" target="_blank">
   <img class="logo" src="winamax logo.png" alt="Winamax">
-  <div style="display:flex;flex-direction:column;align-items:center;text-align:center;line-height:1.2">
-    <span><strong>PARRAINAGE WINAMAX</strong> (Bonus d'inscription : 10€ cash + 10€ de freebet)</span>
-    <div style="flex:1;display:flex;justify-content:space-between;align-items:center;gap:10px;">
-  <span>
-    <strong>PARRAINAGE WINAMAX</strong>
-    (Bonus d'inscription : 10€ cash + 10€ de freebet)
-  </span>
 
-  <span style="
-    font-size:11px;
-    color:#d9c98f;
-    white-space:nowrap;
-    font-weight:700;
-  ">
-    Code : PRL26Y
-  </span>
-</div>
-</a>
+  <div class="winamax-text">
+    <strong>PARRAINAGE WINAMAX</strong>
+    <span>10€ cash + 10€ freebet</span>
+  </div>
+
+  <small>Code : PRL26Y</small>
     </a>
 
    <a class="btn" href="#" onclick="toggleQR(); return false;">
