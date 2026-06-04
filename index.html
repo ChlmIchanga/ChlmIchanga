@@ -28,7 +28,17 @@ a{text-decoration:none;color:white;font-weight:600}
 .logo{width:30px;height:30px;object-fit:contain;flex-shrink:0}
 .discord-logo{border-radius:50%;object-fit:cover;box-shadow:0 0 10px rgba(88,101,242,.8),0 0 20px rgba(88,101,242,.4)}
 .footer{text-align:center;margin-top:30px;font-size:12px;color:#d9c98f}
-</style>
+#betclicQR{
+display:none;
+margin-top:15px;
+text-align:center;
+}
+
+#betclicQR img{
+max-width:250px;
+border-radius:12px;
+box-shadow:0 0 20px rgba(215,180,90,.5);
+}</style>
 </head>
 
 <body>
@@ -63,15 +73,29 @@ a{text-decoration:none;color:white;font-weight:600}
 </a>
     </a>
 
-    <a class="btn" href="https://ton-lien-betclic.com" target="_blank">
+   <a class="btn" href="#" onclick="toggleQR(); return false;">
   <img class="logo" src="logo betclic.png" alt="Betclic">
   <span>Betclic Bonus (CHMIDK29)</span>
 </a>
+
+<div id="betclicQR">
+  <img src="betclic-qr.png" alt="QR Code Betclic">
+</div>
     <a class="btn" href="https://ton-lien-unibet.com" target="_blank">⚽ Unibet Bonus</a>
   </div>
 
   <div class="footer">18+ • Jeux d'argent responsables • Aucun gain garanti</div>
 
 </div>
-</body>
+<script>
+function toggleQR() {
+  const qr = document.getElementById('betclicQR');
+
+  if (qr.style.display === 'block') {
+    qr.style.display = 'none';
+  } else {
+    qr.style.display = 'block';
+  }
+}
+</script></body>
 </html>
