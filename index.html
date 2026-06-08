@@ -8,6 +8,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
+*{
+  box-sizing:border-box;
+}
+
 body{
   margin:0;
   font-family:Poppins,sans-serif;
@@ -99,8 +103,8 @@ h1{
   box-shadow:0 0 12px rgba(142,190,48,.2);
   display:flex;
   align-items:center;
-  justify-content:center;
-  gap:8px;
+  justify-content:space-between;
+  gap:10px;
   transition:.25s;
 }
 
@@ -110,6 +114,7 @@ h1{
 }
 
 .main{
+  justify-content:center;
   background:linear-gradient(135deg,#c7e85a,#d7b45a);
   color:#18200f;
   font-weight:800;
@@ -129,12 +134,7 @@ h1{
   box-shadow:0 0 10px rgba(88,101,242,.8),0 0 20px rgba(88,101,242,.4);
 }
 
-.winamax{
-  justify-content:space-between;
-  gap:10px;
-}
-
-.winamax-text{
+.link-text{
   display:flex;
   flex-direction:column;
   line-height:1.2;
@@ -142,12 +142,12 @@ h1{
   text-align:center;
 }
 
-.winamax-text span{
+.link-text span{
   font-size:11px;
   color:#d9c98f;
 }
 
-.winamax-code{
+.code{
   font-size:10px;
   color:#d9c98f;
   white-space:nowrap;
@@ -186,18 +186,9 @@ h1{
   <div class="note">⚠️ Tous les pronostics sont gratuits — aucun abonnement</div>
 
   <div class="stats">
-    <div class="stat">
-      <h3>FREE</h3>
-      <p>Accès</p>
-    </div>
-    <div class="stat">
-      <h3>DAILY</h3>
-      <p>Picks</p>
-    </div>
-    <div class="stat">
-      <h3>0€</h3>
-      <p>VIP</p>
-    </div>
+    <div class="stat"><h3>FREE</h3><p>Accès</p></div>
+    <div class="stat"><h3>DAILY</h3><p>Picks</p></div>
+    <div class="stat"><h3>0€</h3><p>VIP</p></div>
   </div>
 
   <div class="links">
@@ -207,44 +198,43 @@ h1{
       Rejoindre le Discord
     </a>
 
-    <a class="btn winamax" href="https://www.winamax.fr/parrain?code=PRL26Y" target="_blank">
+    <a class="btn" href="https://www.winamax.fr/parrain?code=PRL26Y" target="_blank">
       <img class="logo" src="winamax logo.png" alt="Winamax">
-      <div class="winamax-text">
+      <div class="link-text">
         <strong>PARRAINAGE WINAMAX</strong>
         <span>(50€ de freebet offerts à l'inscription)</span>
       </div>
-      <span class="winamax-code">Code : PRL26Y</span>
+      <span class="code">Code : PRL26Y</span>
     </a>
 
-    <a class="btn winamax" href="https://www.unibet.fr/inscription/?campaign=280526&parrain=49D6B0B662268F8A" target="_blank">
+    <a class="btn" href="https://www.unibet.fr/inscription/?campaign=280526&parrain=49D6B0B662268F8A" target="_blank">
       <img class="logo" src="unibet logo.png" alt="Unibet">
-      <div class="winamax-text">
+      <div class="link-text">
         <strong>PARRAINAGE UNIBET</strong>
         <span>(50€ de freebet offerts à l'inscription)</span>
       </div>
-      <span class="winamax-code"></span>
     </a>
 
-    <a class="btn winamax" href="#" onclick="toggleQR();return false;">
+    <a class="btn" href="#" onclick="toggleQR();return false;">
       <img class="logo" src="logo betclic.png" alt="Betclic">
-      <div class="winamax-text">
+      <div class="link-text">
         <strong>BETCLIC BONUS DE BIENVENUE</strong>
         <span>(10€ de freebet)</span>
       </div>
-      <span class="winamax-code">Code : CHMIDK29</span>
+      <span class="code">Code : CHMIDK29</span>
     </a>
 
     <div id="betclicQR">
       <img src="betclic-qr.png" alt="QR Code Betclic">
     </div>
 
-    <a class="btn winamax" href="https://coinbase.com/join/2BQMMC8?src=ios-link" target="_blank">
+    <a class="btn" href="https://coinbase.com/join/2BQMMC8?src=ios-link" target="_blank">
       <img class="logo" src="coinbase logo.png" alt="Coinbase">
-      <div class="winamax-text">
+      <div class="link-text">
         <strong>PARRAINAGE COINBASE</strong>
         <span>(20€ offerts en BTC après un achat de 20€)</span>
       </div>
-      <span class="winamax-code">Nouveaux comptes</span>
+      <span class="code">Nouveaux comptes</span>
     </a>
 
   </div>
