@@ -128,10 +128,16 @@ function copyCode(event, code){
   event.preventDefault();
   event.stopPropagation();
 
+  const btn = event.target;
+
   navigator.clipboard.writeText(code).then(() => {
-    alert("Code copié : " + code);
-  }).catch(() => {
-    prompt("Copie ce code :", code);
+    const oldText = btn.innerHTML;
+
+    btn.innerHTML = "✅ Copié !";
+
+    setTimeout(() => {
+      btn.innerHTML = oldText;
+    }, 2000);
   });
 }
 </script>
