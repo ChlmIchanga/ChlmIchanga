@@ -152,7 +152,10 @@ h1{
         <span>(50€ de freebet offerts à l'inscription)</span>
       </div>
       <span class="code">PRL26Y</span>
-      <button class="copy-btn" onclick="event.preventDefault();event.stopPropagation();copyCode('PRL26Y')">📋 Copier</button>
+      <button class="copy-btn"
+        onclick="copyCode(event, 'CHMIDK29')">
+  📋 Copier
+</button>
     </a>
 
     <a class="btn" href="https://www.unibet.fr/inscription/?campaign=280526&parrain=49D6B0B662268F8A" target="_blank">
@@ -170,7 +173,10 @@ h1{
         <span>(10€ de freebet)</span>
       </div>
       <span class="code">CHMIDK29</span>
-      <button class="copy-btn" onclick="event.preventDefault();event.stopPropagation();copyCode('CHMIDK29')">📋 Copier</button>
+      <button class="copy-btn"
+        onclick="copyCode(event, 'PRL26Y')">
+  📋 Copier
+</button
     </a>
 
     <div id="betclicQR">
@@ -195,15 +201,23 @@ h1{
 </div>
 
 <script>
+<script>
 function toggleQR(){
   const qr = document.getElementById("betclicQR");
   qr.style.display = qr.style.display === "block" ? "none" : "block";
 }
 
-function copyCode(code){
-  navigator.clipboard.writeText(code);
-  alert("Code copié : " + code);
+function copyCode(event, code){
+  event.preventDefault();
+  event.stopPropagation();
+
+  navigator.clipboard.writeText(code).then(() => {
+    alert("Code copié : " + code);
+  }).catch(() => {
+    prompt("Copie ce code :", code);
+  });
 }
+</script>
 </script>
 
 </body>
