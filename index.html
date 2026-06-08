@@ -8,9 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-*{
-  box-sizing:border-box;
-}
+*{box-sizing:border-box}
 
 body{
   margin:0;
@@ -22,90 +20,52 @@ body{
   padding:30px 15px;
 }
 
-.container{
-  width:100%;
-  max-width:560px;
-  text-align:center;
-}
+.container{width:100%;max-width:560px;text-align:center}
 
 .avatar{
-  width:150px;
-  height:150px;
-  object-fit:cover;
-  border-radius:50%;
+  width:150px;height:150px;object-fit:cover;border-radius:50%;
   border:4px solid #d7b45a;
   box-shadow:0 0 20px #d7b45a,0 0 45px rgba(142,190,48,.7),0 0 80px rgba(36,54,92,.8);
 }
 
 h1{
-  font-size:32px;
-  color:#c7e85a;
+  font-size:32px;color:#c7e85a;
   text-shadow:0 0 10px #c7e85a,0 0 25px #88a832,0 0 45px #d7b45a;
 }
 
 .badge{
-  display:inline-block;
-  padding:8px 14px;
+  display:inline-block;padding:8px 14px;
   background:linear-gradient(135deg,#d7b45a,#f2d27a);
-  color:#1b2414;
-  font-weight:700;
-  border-radius:50px;
+  color:#1b2414;font-weight:700;border-radius:50px;
   box-shadow:0 0 18px rgba(215,180,90,.8);
 }
 
-.note{
-  margin-top:10px;
-  font-size:12px;
-  color:#d6e98c;
-}
+.note{margin-top:10px;font-size:12px;color:#d6e98c}
 
 .stats{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:10px;
-  margin:25px 0;
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:10px;margin:25px 0;
 }
 
 .stat{
   background:rgba(26,38,30,.9);
   border:1px solid #6f8732;
-  padding:15px;
-  border-radius:15px;
+  padding:15px;border-radius:15px;
   box-shadow:0 0 14px rgba(215,180,90,.18);
 }
 
-.stat h3{
-  margin:0;
-  color:#c7e85a;
-}
+.stat h3{margin:0;color:#c7e85a}
+.stat p{margin:5px 0 0;font-size:12px;color:#f0e7b8}
 
-.stat p{
-  margin:5px 0 0;
-  font-size:12px;
-  color:#f0e7b8;
-}
-
-.links{
-  display:flex;
-  flex-direction:column;
-  gap:14px;
-}
+.links{display:flex;flex-direction:column;gap:14px}
 
 .btn{
-  min-height:58px;
-  padding:12px 16px;
-  border-radius:14px;
-  border:1px solid #6f8732;
-  background:rgba(20,31,27,.95);
-  color:white;
-  text-decoration:none;
-  font-weight:600;
+  min-height:58px;padding:12px 16px;border-radius:14px;
+  border:1px solid #6f8732;background:rgba(20,31,27,.95);
+  color:white;text-decoration:none;font-weight:600;
   box-shadow:0 0 12px rgba(142,190,48,.2);
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:10px;
-  transition:.25s;
+  display:flex;align-items:center;justify-content:space-between;
+  gap:10px;transition:.25s;
 }
 
 .btn:hover{
@@ -116,77 +76,50 @@ h1{
 .main{
   justify-content:center;
   background:linear-gradient(135deg,#c7e85a,#d7b45a);
-  color:#18200f;
-  font-weight:800;
+  color:#18200f;font-weight:800;
   box-shadow:0 0 22px rgba(215,180,90,.85);
 }
 
-.logo{
-  width:30px;
-  height:30px;
-  object-fit:contain;
-  flex-shrink:0;
-}
+.logo{width:30px;height:30px;object-fit:contain;flex-shrink:0}
 
 .discord{
-  border-radius:50%;
-  object-fit:cover;
+  border-radius:50%;object-fit:cover;
   box-shadow:0 0 10px rgba(88,101,242,.8),0 0 20px rgba(88,101,242,.4);
 }
 
 .link-text{
-  display:flex;
-  flex-direction:column;
-  line-height:1.2;
-  flex:1;
-  text-align:center;
+  display:flex;flex-direction:column;line-height:1.2;
+  flex:1;text-align:center;
 }
 
-.link-text span{
-  font-size:11px;
-  color:#d9c98f;
-}
+.link-text span{font-size:11px;color:#d9c98f}
 
 .code{
-  font-size:10px;
-  color:#d9c98f;
-  white-space:nowrap;
+  font-size:10px;color:#d9c98f;white-space:nowrap;
 }
 
-#betclicQR{
-  display:none;
-  margin-top:15px;
+.copy-btn{
+  background:#d7b45a;color:#18200f;border:none;
+  border-radius:8px;padding:7px 11px;
+  font-size:11px;font-weight:700;
+  cursor:pointer;flex-shrink:0;
 }
+
+.copy-btn:hover{opacity:.9}
+
+#betclicQR{display:none;margin-top:15px}
 
 #betclicQR img{
-  max-width:250px;
-  border-radius:12px;
+  max-width:250px;border-radius:12px;
   box-shadow:0 0 20px rgba(215,180,90,.5);
 }
 
 .footer{
-  margin-top:30px;
-  font-size:12px;
-  color:#d9c98f;
+  margin-top:30px;font-size:12px;color:#d9c98f;
   border-bottom:2px solid red;
-  display:inline-block;
-  padding-bottom:3px;
+  display:inline-block;padding-bottom:3px;
 }
-.copy-btn{
-  background:#d7b45a;
-  color:#18200f;
-  border:none;
-  border-radius:8px;
-  padding:6px 10px;
-  font-size:11px;
-  font-weight:700;
-  cursor:pointer;
-  flex-shrink:0;
-}
-
-.copy-btn:hover{
-  opacity:.9;
-}</style>
+</style>
 </head>
 
 <body>
@@ -212,20 +145,14 @@ h1{
       Rejoindre le Discord
     </a>
 
- <a class="btn" href="https://www.winamax.fr/parrain?code=PRL26Y" target="_blank">
-  <img class="logo" src="winamax logo.png" alt="Winamax">
-  <div class="link-text">
-    <strong>PARRAINAGE WINAMAX</strong>
-    <span>(50€ de freebet offerts à l'inscription)</span>
-  </div>
-
-  <span class="code">PRL26Y</span>
-
-  <button class="copy-btn"
-          onclick="event.preventDefault();event.stopPropagation();copyCode('PRL26Y')">
-    📋 Copier
-  </button>
-</a>
+    <a class="btn" href="https://www.winamax.fr/parrain?code=PRL26Y" target="_blank">
+      <img class="logo" src="winamax logo.png" alt="Winamax">
+      <div class="link-text">
+        <strong>PARRAINAGE WINAMAX</strong>
+        <span>(50€ de freebet offerts à l'inscription)</span>
+      </div>
+      <span class="code">PRL26Y</span>
+      <button class="copy-btn" onclick="event.preventDefault();event.stopPropagation();copyCode('PRL26Y')">📋 Copier</button>
     </a>
 
     <a class="btn" href="https://www.unibet.fr/inscription/?campaign=280526&parrain=49D6B0B662268F8A" target="_blank">
@@ -236,20 +163,15 @@ h1{
       </div>
     </a>
 
-   <a class="btn" href="#" onclick="toggleQR();return false;">
-  <img class="logo" src="logo betclic.png" alt="Betclic">
-  <div class="link-text">
-    <strong>BETCLIC BONUS DE BIENVENUE</strong>
-    <span>(10€ de freebet)</span>
-  </div>
-
-  <span class="code">CHMIDK29</span>
-
-  <button class="copy-btn"
-          onclick="event.preventDefault();event.stopPropagation();copyCode('CHMIDK29')">
-    📋 Copier
-  </button>
-</a>
+    <a class="btn" href="#" onclick="toggleQR();return false;">
+      <img class="logo" src="logo betclic.png" alt="Betclic">
+      <div class="link-text">
+        <strong>BETCLIC BONUS DE BIENVENUE</strong>
+        <span>(10€ de freebet)</span>
+      </div>
+      <span class="code">CHMIDK29</span>
+      <button class="copy-btn" onclick="event.preventDefault();event.stopPropagation();copyCode('CHMIDK29')">📋 Copier</button>
+    </a>
 
     <div id="betclicQR">
       <img src="betclic-qr.png" alt="QR Code Betclic">
@@ -276,6 +198,11 @@ h1{
 function toggleQR(){
   const qr = document.getElementById("betclicQR");
   qr.style.display = qr.style.display === "block" ? "none" : "block";
+}
+
+function copyCode(code){
+  navigator.clipboard.writeText(code);
+  alert("Code copié : " + code);
 }
 </script>
 
