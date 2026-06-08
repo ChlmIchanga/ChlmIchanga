@@ -112,8 +112,8 @@ h1{font-size:32px;color:#c7e85a;text-shadow:0 0 20px #c7e85a}
   Rejoindre le Discord
 </a>
 
-<div id="discord-members" class="note">
-👥 Chargement...
+<div class="note">
+👥 40 membres
 </div>
 
     <div class="card">
@@ -189,16 +189,7 @@ function copyCode(button, code){
   });
 }
 
-fetch('https://discord.com/api/guilds/1406422879767101501/widget.json')
-  .then(response => response.json())
-  .then(data => {
-    document.getElementById('discord-members').innerHTML =
-      `👥 ${data.presence_count} membres en ligne`;
-  })
-  .catch(() => {
-    document.getElementById('discord-members').innerHTML =
-      '👥 Rejoins la communauté';
-  });
+
 </script>
 
 </body>
