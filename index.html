@@ -172,7 +172,21 @@ h1{
   display:inline-block;
   padding-bottom:3px;
 }
-</style>
+.copy-btn{
+  background:#d7b45a;
+  color:#18200f;
+  border:none;
+  border-radius:8px;
+  padding:6px 10px;
+  font-size:11px;
+  font-weight:700;
+  cursor:pointer;
+  flex-shrink:0;
+}
+
+.copy-btn:hover{
+  opacity:.9;
+}</style>
 </head>
 
 <body>
@@ -198,13 +212,20 @@ h1{
       Rejoindre le Discord
     </a>
 
-    <a class="btn" href="https://www.winamax.fr/parrain?code=PRL26Y" target="_blank">
-      <img class="logo" src="winamax logo.png" alt="Winamax">
-      <div class="link-text">
-        <strong>PARRAINAGE WINAMAX</strong>
-        <span>(50€ de freebet offerts à l'inscription)</span>
-      </div>
-      <span class="code">Code : PRL26Y</span>
+ <a class="btn" href="https://www.winamax.fr/parrain?code=PRL26Y" target="_blank">
+  <img class="logo" src="winamax logo.png" alt="Winamax">
+  <div class="link-text">
+    <strong>PARRAINAGE WINAMAX</strong>
+    <span>(50€ de freebet offerts à l'inscription)</span>
+  </div>
+
+  <span class="code">PRL26Y</span>
+
+  <button class="copy-btn"
+          onclick="event.preventDefault();event.stopPropagation();copyCode('PRL26Y')">
+    📋 Copier
+  </button>
+</a>
     </a>
 
     <a class="btn" href="https://www.unibet.fr/inscription/?campaign=280526&parrain=49D6B0B662268F8A" target="_blank">
@@ -215,14 +236,20 @@ h1{
       </div>
     </a>
 
-    <a class="btn" href="#" onclick="toggleQR();return false;">
-      <img class="logo" src="logo betclic.png" alt="Betclic">
-      <div class="link-text">
-        <strong>BETCLIC BONUS DE BIENVENUE</strong>
-        <span>(10€ de freebet)</span>
-      </div>
-      <span class="code">Code : CHMIDK29</span>
-    </a>
+   <a class="btn" href="#" onclick="toggleQR();return false;">
+  <img class="logo" src="logo betclic.png" alt="Betclic">
+  <div class="link-text">
+    <strong>BETCLIC BONUS DE BIENVENUE</strong>
+    <span>(10€ de freebet)</span>
+  </div>
+
+  <span class="code">CHMIDK29</span>
+
+  <button class="copy-btn"
+          onclick="event.preventDefault();event.stopPropagation();copyCode('CHMIDK29')">
+    📋 Copier
+  </button>
+</a>
 
     <div id="betclicQR">
       <img src="betclic-qr.png" alt="QR Code Betclic">
