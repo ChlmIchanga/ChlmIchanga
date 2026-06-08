@@ -107,10 +107,14 @@ h1{font-size:32px;color:#c7e85a;text-shadow:0 0 20px #c7e85a}
 
   <div class="links">
 
-    <a class="card main" href="https://discord.gg/QUSdbEj6g" target="_blank">
-      <img class="logo discord" src="discord.png" alt="Discord">
-      Rejoindre le Discord
-    </a>
+ <a class="card main" href="https://discord.gg/QUSdbEj6g" target="_blank">
+  <img class="logo discord" src="discord.png" alt="Discord">
+  Rejoindre le Discord
+</a>
+
+<div id="discord-members" class="note">
+👥 Chargement...
+</div>
 
     <div class="card">
       <a href="https://www.winamax.fr/parrain?code=PRL26Y" target="_blank">
@@ -184,6 +188,17 @@ function copyCode(button, code){
     }, 2000);
   });
 }
+
+fetch('https://discord.com/api/guilds/1406422879767101501/widget.json')
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById('discord-members').innerHTML =
+      `👥 ${data.presence_count} membres en ligne`;
+  })
+  .catch(() => {
+    document.getElementById('discord-members').innerHTML =
+      '👥 Rejoins la communauté';
+  });
 </script>
 
 </body>
