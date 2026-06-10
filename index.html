@@ -134,6 +134,7 @@ h1{
   color:#18200f;
   font-weight:800;
   text-decoration:none!important;
+  animation:pulseDiscord 2.5s infinite;
 }
 
 .main *{
@@ -233,6 +234,23 @@ h1{
   border-bottom:2px solid red;
   display:inline-block;
   padding-bottom:3px;
+}
+
+@keyframes pulseDiscord{
+  0%{
+    transform:scale(1);
+    box-shadow:0 0 15px rgba(199,232,90,.4);
+  }
+  50%{
+    transform:scale(1.02);
+    box-shadow:
+      0 0 25px rgba(199,232,90,.9),
+      0 0 40px rgba(215,180,90,.6);
+  }
+  100%{
+    transform:scale(1);
+    box-shadow:0 0 15px rgba(199,232,90,.4);
+  }
 }
 </style>
 </head>
@@ -339,3 +357,4 @@ function copyCode(button, code){
 
 </body>
 </html>
+
