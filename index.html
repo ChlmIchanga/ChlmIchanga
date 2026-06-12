@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ℭ𝔥𝔩𝔪𝔩𝔠𝔥𝔞𝔫𝔤𝔞 | Free Picks</title>
+<title>Chimichanga | Free Picks</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Luckiest+Guy&display=swap" rel="stylesheet">
 
 <style>
 *{box-sizing:border-box}
+
 body{
   margin:0;
   font-family:Poppins,sans-serif;
@@ -41,19 +41,20 @@ h1{
   text-shadow:0 0 20px #c7e85a;
 }
 
+.note{
+  margin:10px 0;
+  font-size:12px;
+  color:#d6e98c;
+}
+
 .badge{
   display:inline-block;
+  margin:0 0 22px;
   padding:8px 14px;
   background:linear-gradient(135deg,#d7b45a,#f2d27a);
   color:#1b2414;
-  font-weight:700;
+  font-weight:800;
   border-radius:50px;
-}
-
-.note{
-  margin:10px 0 24px;
-  font-size:12px;
-  color:#d6e98c;
 }
 
 .links{
@@ -80,7 +81,8 @@ h1{
   box-shadow:0 0 18px #c7e85a;
 }
 
-.card a{
+.card a,
+.card.main{
   color:white;
   text-decoration:none;
   display:flex;
@@ -102,18 +104,7 @@ h1{
   justify-content:center;
   position:relative;
   background:linear-gradient(135deg,#c7e85a,#d7b45a);
-  color:#18200f;
-  font-weight:800;
   animation:pulseDiscord 2.5s infinite;
-  text-decoration:none !important;
-}
-
-.main *,
-.main:link,
-.main:visited,
-.main:hover,
-.main:active{
-  text-decoration:none !important;
 }
 
 .discord{
@@ -125,11 +116,10 @@ h1{
 
 .discord-title{
   font-family:'Luckiest Guy',cursive;
-  color:white;
   font-size:24px;
   letter-spacing:2px;
+  color:white;
   text-shadow:2px 2px 0 #000,-2px -2px 0 #000,2px -2px 0 #000,-2px 2px 0 #000;
-  text-decoration:none !important;
 }
 
 .discord-members{
@@ -163,7 +153,7 @@ h1{
 .qr-box button{
   background:#d7b45a;
   color:#18200f;
-  border:none;
+  border:0;
   border-radius:8px;
   font-weight:700;
   cursor:pointer;
@@ -228,9 +218,8 @@ h1{
 
   <h1>ℭ𝔥𝔩𝔪𝔩𝔠𝔥𝔞𝔫𝔤𝔞</h1>
 
- <div class="note">⚠️ Tous les pronostics sont gratuits — aucun abonnement</div>
-
-<div class="badge">🎾⚽🏀𝐂𝐨𝐦𝐦𝐮 𝐩𝐫𝐨𝐧𝐨𝐬 𝐬𝐩𝐨𝐫𝐭𝐢𝐟𝐬</div>
+  <div class="note">⚠️ Tous les pronostics sont gratuits — aucun abonnement</div>
+  <div class="badge">🎾⚽🏀 𝐂𝐨𝐦𝐦𝐮 𝐩𝐫𝐨𝐧𝐨𝐬 𝐬𝐩𝐨𝐫𝐭𝐢𝐟𝐬</div>
 
   <div class="links">
 
@@ -307,8 +296,8 @@ function toggleQR(){
 
 function copyCode(button, code){
   navigator.clipboard.writeText(code);
-  button.innerHTML = "✅ Copié !";
-  setTimeout(() => button.innerHTML = "📋 Copier", 2000);
+  button.textContent = "✅ Copié !";
+  setTimeout(() => button.textContent = "📋 Copier", 2000);
 }
 </script>
 
