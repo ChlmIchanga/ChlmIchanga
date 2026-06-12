@@ -48,13 +48,25 @@ h1{
 }
 
 .badge{
-  display:inline-block;
-  margin:0 0 22px;
+  display:block;
+  width:fit-content;
+  margin:0;
   padding:8px 14px;
-  background:linear-gradient(135deg,#d7b45a,#f2d27a);
-  color:#1b2414;
-  font-weight:800;
-  border-radius:50px;
+  background:rgba(255,255,255,.08);
+  backdrop-filter:blur(6px);
+  border:1px solid rgba(255,255,255,.15);
+  border-radius:12px;
+  color:#d7b45a;
+  font-weight:700;
+  font-size:13px;
+  text-align:left;
+}
+
+.badge-wrap{
+  width:100%;
+  display:flex;
+  justify-content:flex-start;
+  margin-bottom:20px;
 }
 
 .links{
@@ -219,8 +231,9 @@ h1{
   <h1>ℭ𝔥𝔩𝔪𝔩𝔠𝔥𝔞𝔫𝔤𝔞</h1>
 
   <div class="note">⚠️ Tous les pronostics sont gratuits — aucun abonnement</div>
+ <div class="badge-wrap">
   <div class="badge">🎾⚽🏀 𝐂𝐨𝐦𝐦𝐮 𝐩𝐫𝐨𝐧𝐨𝐬 𝐬𝐩𝐨𝐫𝐭𝐢𝐟𝐬</div>
-
+</div>
   <div class="links">
 
     <a class="card main" href="https://discord.gg/QUSdbEj6g" target="_blank">
