@@ -50,7 +50,10 @@ h1{
 .badge{
   display:block;
   width:fit-content;
-  margin:0;
+  .badge{
+  ...
+  margin-left:10px;
+}
   padding:8px 14px;
   background:rgba(255,255,255,.08);
   backdrop-filter:blur(6px);
@@ -66,7 +69,9 @@ h1{
   width:100%;
   display:flex;
   justify-content:flex-start;
-  margin:30px 0 5px;
+  margin:40px 0 -15px;
+  position:relative;
+  z-index:10;
 }
 
 .links{
