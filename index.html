@@ -101,9 +101,17 @@ h1{
   transition:.25s;
 }
 
-.card:hover{
-  transform:translateY(-3px);
-  box-shadow:0 0 18px #c7e85a;
+.card{
+  min-height:52px;
+  padding:8px 12px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  background:linear-gradient(135deg,rgba(17,24,39,.95),rgba(20,31,27,.95));
+  border:1px solid rgba(199,232,90,.55);
+  border-radius:15px;
+  box-shadow:0 0 14px rgba(142,190,48,.22);
+  transition:.25s;
 }
 
 .card a{
@@ -165,7 +173,10 @@ h1{
   text-align:center;
   line-height:1.15;
 }
-
+.link-text strong{
+  font-size:16px;
+  letter-spacing:.3px;
+}
 .link-text span{
   display:block;
   font-size:10px;
@@ -319,7 +330,7 @@ h1{
         <img class="logo" src="logo betclic.png" alt="Betclic">
         <div class="link-text">
           <strong>BETCLIC BONUS DE BIENVENUE</strong>
-          <span>(30€ de feebets offerts à l'inscription + 1er pari remboursé en feebets/max 100€)</span>
+          <span>(30€ de feebets offerts + 1er pari remboursé en feebets jusqu’à 100€)</span>
         </div>
         <span class="code">CHMIDK29</span>
       </a>
@@ -339,7 +350,7 @@ h1{
 
   </div>
 
-  <div class="footer">18+ • Jeux d'argent responsables • Aucun gain garanti</div>
+  <div class="footer">18+ • Jouer comporte des risques • Aucun gain garanti</div>
 
 </div>
 
