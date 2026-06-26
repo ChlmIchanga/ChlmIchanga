@@ -14,39 +14,19 @@ body{
   margin:0;
   min-height:100vh;
   font-family:Poppins,sans-serif;
-  background:radial-gradient(circle at top,#8fbf2f,#25351f 38%,#111827 78%,#070b12);
   color:white;
+  background:radial-gradient(circle at top,#8fbf2f,#25351f 38%,#111827 78%,#070b12);
   display:flex;
   justify-content:center;
   padding:22px 15px 28px;
 }
 
 .container{
-  position:relative;
   width:100%;
   max-width:560px;
   text-align:center;
 }
 
-.twitter-btn{
-  position:absolute;
-  top:110px;
-  right:0px;
-  display:flex;
-  align-items:center;
-  gap:4px;
-  text-decoration:none;
-  color:black;
-  font-weight:700;
-  font-size:11px;
-  z-index:100;
-}
-
-.twitter-btn img{
-  width:18px;
-  height:18px;
-  filter:brightness(0);
-}
 .avatar{
   width:115px;
   height:115px;
@@ -65,21 +45,37 @@ h1{
 
 .badge{
   display:inline-block;
-  margin:0 0 8px;
+  margin-bottom:8px;
   padding:6px 12px;
+  border-radius:14px;
   background:rgba(255,255,255,.08);
   border:1px solid rgba(255,255,255,.15);
-  border-radius:14px;
   color:#d7b45a;
   font-size:12px;
   font-weight:700;
-  backdrop-filter:blur(6px);
 }
 
 .note{
-  margin:0 0 16px;
+  margin-bottom:14px;
   font-size:12px;
   color:#d6e98c;
+}
+
+.social{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  margin-bottom:12px;
+  color:white;
+  text-decoration:none;
+  font-size:12px;
+  font-weight:700;
+}
+
+.social img{
+  width:18px;
+  height:18px;
+  filter:brightness(0) invert(1);
 }
 
 .links{
@@ -98,20 +94,6 @@ h1{
   border:1px solid rgba(199,232,90,.55);
   border-radius:15px;
   box-shadow:0 0 14px rgba(142,190,48,.22);
-  transition:.25s;
-}
-
-.card{
-  min-height:52px;
-  padding:8px 12px;
-  display:flex;
-  align-items:center;
-  gap:10px;
-  background:linear-gradient(135deg,rgba(17,24,39,.95),rgba(20,31,27,.95));
-  border:1px solid rgba(199,232,90,.55);
-  border-radius:15px;
-  box-shadow:0 0 14px rgba(142,190,48,.22);
-  transition:.25s;
 }
 
 .card a{
@@ -143,7 +125,6 @@ h1{
   width:40px;
   height:40px;
   border-radius:50%;
-  box-shadow:0 0 10px rgba(88,101,242,.8);
 }
 
 .discord-title{
@@ -151,14 +132,9 @@ h1{
   font-size:23px;
   letter-spacing:1px;
   color:white;
-  text-decoration:none !important;
   text-shadow:2px 2px 0 #000,-2px -2px 0 #000,2px -2px 0 #000,-2px 2px 0 #000;
-}.card.main,
-.card.main:visited,
-.card.main:hover,
-.card.main:active{
-  text-decoration:none !important;
 }
+
 .discord-members{
   position:absolute;
   right:18px;
@@ -173,14 +149,14 @@ h1{
   text-align:center;
   line-height:1.15;
 }
+
 .link-text strong{
   font-size:16px;
-  letter-spacing:.3px;
 }
+
 .link-text span{
   display:block;
   font-size:10px;
-  line-height:1.05;
   color:#d9c98f;
 }
 
@@ -251,36 +227,17 @@ h1{
 }
 
 @media(max-width:600px){
-  body{
-    padding:18px 18px 24px;
-  }
-.avatar{
-    width:108px;
-    height:108px;
-  }
-
-  h1{
-    font-size:29px;
-    margin:12px 0 8px;
-  }
-
-  .main{
-    min-height:80px;
-    padding:16px 12px;
-  }
-
-  .discord-title{
-    font-size:21px;
-  }
-
-  .link-text strong{
-    font-size:15px;
-  }
+  .avatar{width:108px;height:108px}
+  h1{font-size:29px}
+  .main{padding:16px 12px}
+  .discord-title{font-size:21px}
+  .link-text strong{font-size:15px}
 }
 </style>
 </head>
 
 <body>
+
 <div class="container">
 
   <img class="avatar" src="photo.jpg" alt="Profil Chimichanga">
@@ -288,13 +245,13 @@ h1{
   <h1>ℭ𝔥𝔩𝔪𝔩𝔠𝔥𝔞𝔫𝔤𝔞</h1>
 
   <div class="badge">🎾⚽🏀 Commu pronos sportifs</div>
-
   <div class="note">⚠️ Tous les pronostics sont gratuits — aucun abonnement</div>
 
- <a href="https://x.com/Chlmlchanga_" target="_blank" class="twitter-btn">
+  <a class="social" href="https://x.com/Chlmlchanga_" target="_blank">
     <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_%28white%29.png" alt="X">
-    <span>@Chlmlchanga_</span>
-</a>
+    @Chlmlchanga_
+  </a>
+
   <div class="links">
 
     <a class="card main" href="https://discord.gg/QUSdbEj6g" target="_blank">
@@ -308,7 +265,7 @@ h1{
         <img class="logo" src="winamax logo.png" alt="Winamax">
         <div class="link-text">
           <strong>PARRAINAGE WINAMAX</strong>
-          <span>(50€ de freebets offerts + 1er pari remboursé en cash jusqu’à 100€)</span>
+          <span>50€ de freebets offerts + 1er pari remboursé jusqu’à 100€</span>
         </div>
         <span class="code">PRL26Y</span>
       </a>
@@ -320,7 +277,7 @@ h1{
         <img class="logo" src="unibet logo.png" alt="Unibet">
         <div class="link-text">
           <strong>PARRAINAGE UNIBET</strong>
-          <span>(50€ de freebet offerts à l'inscription)</span>
+          <span>50€ de freebets offerts à l'inscription</span>
         </div>
       </a>
     </div>
@@ -329,8 +286,8 @@ h1{
       <a href="#" onclick="toggleQR();return false;">
         <img class="logo" src="logo betclic.png" alt="Betclic">
         <div class="link-text">
-          <strong>BETCLIC BONUS DE BIENVENUE</strong>
-          <span>(40€ de feebets offerts + 1er pari remboursé en feebets jusqu’à 100€)</span>
+          <strong>BETCLIC BONUS</strong>
+          <span>40€ de feebets offerts + 1er pari remboursé jusqu’à 100€</span>
         </div>
         <span class="code">CHMIDK29</span>
       </a>
@@ -342,7 +299,7 @@ h1{
         <img class="logo" src="coinbase logo.png" alt="Coinbase">
         <div class="link-text">
           <strong>PARRAINAGE COINBASE</strong>
-          <span>(20€ offerts en BTC après un achat de 20€)</span>
+          <span>20€ offerts en BTC après un achat de 20€</span>
         </div>
         <span class="code">Nouveaux comptes</span>
       </a>
@@ -354,8 +311,8 @@ h1{
 
 </div>
 
-<div id="betclicQR">
-  <div class="qr-box">
+<div id="betclicQR" onclick="toggleQR()">
+  <div class="qr-box" onclick="event.stopPropagation()">
     <img src="betclic-qr.png" alt="QR Code Betclic">
     <br>
     <button onclick="toggleQR()">Fermer</button>
@@ -369,9 +326,10 @@ function toggleQR(){
 }
 
 function copyCode(button, code){
-  navigator.clipboard.writeText(code);
-  button.textContent = "✅ Copié !";
-  setTimeout(() => button.textContent = "📋 Copier", 2000);
+  navigator.clipboard.writeText(code).then(() => {
+    button.textContent = "✅ Copié !";
+    setTimeout(() => button.textContent = "📋 Copier", 2000);
+  });
 }
 </script>
 
